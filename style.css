@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+.container {
+  max-width: 350px;
+  background-color: white;
+}
+.result {
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 0 3.1rem;
+}
+h1 {
+  padding: 1.3rem;
+  color: hsl(221, 100%, 96%);
+  font-size: 1.2rem;
+}
+.mark {
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+.mark span {
+  display: block;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 3rem;
+}
+h2 {
+  padding-bottom: 1.3rem;
+}
+.conclusion {
+  padding-bottom: 3rem;
+  font-size: 0.85rem;
+}
+
+.summary {
+  padding: 2rem;
+}
+h3 {
+  padding-bottom: 1.65rem;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.6rem;
+  margin-bottom: 1.3rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.res {
+  display: flex;
+  gap: 0.6rem;
+}
+#reaction {
+  color: hsl(0, 100%, 67%);
+}
+#memory {
+  color: hsl(39, 100%, 56%);
+}
+#verbal {
+  color: hsl(166, 100%, 37%);
+}
+#visual {
+  color: hsl(234, 85%, 45%);
+}
+.point {
+  color: hsl(241, 100%, 89%);
+}
+.point span {
+  color: hsl(224, 30%, 27%);
+}
+button {
+  width: 100%;
+  color: white;
+  font-weight: 800;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  padding: 1.2rem 5.75rem;
+
+  border-radius: 30px;
+}
+.results:first-of-type {
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+.results:nth-of-type(2) {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+.results.results:nth-of-type(3) {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+.results:last-of-type {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsla(256, 72%, 46%, 1);
+}
+button:active {
+  color: hsl(252, 100%, 67%);
+}
+@media (min-width: 768px) {
+  .container {
+    background-color: white;
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    border-radius: 30px;
+    box-shadow: 1em 1.2em 6em -1.8em hsl(241, 100%, 89%);
+  }
+
+  .result {
+    border-radius: inherit;
+    padding: 0 3.5rem;
+  }
+  h1 {
+    padding: 2.5rem;
+  }
+  .mark {
+    border-radius: 50%;
+    padding: 2.5rem;
+    width: 150px;
+  }
+  .mark span {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  h2 {
+    padding-bottom: 2.3rem;
+  }
+  .conclusion {
+    font-size: 0.95rem;
+    padding-bottom: 0.5rem;
+  }
+}
